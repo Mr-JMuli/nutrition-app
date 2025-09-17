@@ -59,6 +59,7 @@ git push origin main
 ## Go to share.streamlit.io
 
 ---
+
 ## Connect your GitHub repo
 
 Select main branch
@@ -134,7 +135,7 @@ By promoting nutrient-rich, affordable diets, the tool directly supports SDG 2: 
 
 ---
 ## 👤 Author
-### John Muli
+### John Muli Mutua
  PLP Python Programming Final Project – September 2025
 
 ## 📜 License
