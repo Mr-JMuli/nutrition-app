@@ -42,6 +42,8 @@ pip install -r requirements.txt
 # Run the app
 streamlit run app.py
 Access locally at: http://localhost:8501
+```
+
 
 🚀 Deployment
 You can deploy for free on Streamlit Community Cloud:
