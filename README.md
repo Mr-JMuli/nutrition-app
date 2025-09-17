@@ -1,6 +1,6 @@
 # 🇰🇪 Affordable Nutrition Planner for Kenya
 
-[Live App](https://nutri-app.streamlit.app/)  
+### [Live App](https://nutri-app.streamlit.app/)  
 
 An **AI-powered web application** designed to deliver affordable meal recommendations for Kenyan households, aligned with **SDG 2: Zero Hunger**.  
 This project was developed as a **PLP Academy Python Programming final project** and uses **linear programming** to optimize daily nutrition—prioritizing user-owned foods, staying within budget, and incorporating Kenyan staples.
@@ -26,7 +26,7 @@ This project was developed as a **PLP Academy Python Programming final project**
 - [Git](https://git-scm.com)  
 - [VS Code](https://code.visualstudio.com) with Python extension  
 
-### Local Setup
+## Local Setup
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/nutrition-app.git
@@ -43,9 +43,8 @@ pip install -r requirements.txt
 streamlit run app.py
 Access locally at: http://localhost:8501
 ```
-
-
-### 🚀 Deployment
+---
+## 🚀 Deployment
 You can deploy for free on Streamlit Community Cloud:
 
 #Push to GitHub
@@ -58,7 +57,8 @@ git push origin main
 ```
 ## Go to share.streamlit.io
 
-# Connect your GitHub repo
+---
+## Connect your GitHub repo
 
 Select main branch
 
@@ -66,9 +66,10 @@ Set app.py as the entry file
 
 Click Deploy!
 
-## Your app will be live at a URL like:
+### Your app will be live at a URL like:
 👉 https://nutrition-app.streamlit.app
 
+---
 ## 📖 Usage
 Set Budget – Choose a daily budget (e.g., KES 300).
 
@@ -80,6 +81,7 @@ Get Recommendations – View optimized diet plan, nutrient chart, and suggested 
 
 Update Prices – Fetch the latest Naivas prices (optional).
 
+---
 ## 🧑‍💻 Tech Stack
 Python – Core programming
 
@@ -93,6 +95,7 @@ Requests + BeautifulSoup – Price scraping
 
 USDA API – Nutrient data
 
+---
 ## 📊 Data Sources
 Foods: Kenyan staples (maize flour, sukuma wiki, beans)
 
@@ -100,7 +103,7 @@ Costs: 2025 estimates from Naivas, KNBS, and market trends (maize flour ~KES 110
 
 Nutrients: USDA / FAO data (Calories, Protein, Iron, Vitamins A & C)
 
-# ℹ️ For more accuracy, update with local market data or APIs.
+### ℹ️ For more accuracy, update with local market data or APIs.
 
 ## ⚠️ Limitations
 Web scraping may fail if Naivas.online changes its structure.
@@ -117,18 +120,19 @@ Optimize UI for mobile access in rural areas.
 Track carbon footprint for sustainable eating.
 
 Integrate additional APIs (e.g., Numbeo for pricing).
+---
 
 ## 🌍 SDG 2 Impact
 This app empowers low-income Kenyan households to:
-# ✅ Maximize nutrition from foods they already own
-# ✅ Minimize waste and costs
-# ✅ Access affordable, culturally relevant meal plans
+### ✅ Maximize nutrition from foods they already own
+### ✅ Minimize waste and costs
+### ✅ Access affordable, culturally relevant meal plans
 
 By promoting nutrient-rich, affordable diets, the tool directly supports SDG 2: Zero Hunger.
-
-### 👤 Author
-## John Muli
-# PLP Python Programming Final Project – September 2025
+---
+## 👤 Author
+### John Muli
+ PLP Python Programming Final Project – September 2025
 
 ## 📜 License
 MIT License – Free to use, modify, and share.
