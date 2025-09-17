@@ -1,4 +1,5 @@
-# 🇰🇪 Affordable Nutrition Planner for Kenya
+# Affordable Nutrition Planner for Kenya
+---
 
 ### [Live App](https://nutri-app.streamlit.app/)  
 
@@ -120,6 +121,7 @@ Optimize UI for mobile access in rural areas.
 Track carbon footprint for sustainable eating.
 
 Integrate additional APIs (e.g., Numbeo for pricing).
+
 ---
 
 ## 🌍 SDG 2 Impact
@@ -129,6 +131,7 @@ This app empowers low-income Kenyan households to:
 ### ✅ Access affordable, culturally relevant meal plans
 
 By promoting nutrient-rich, affordable diets, the tool directly supports SDG 2: Zero Hunger.
+
 ---
 ## 👤 Author
 ### John Muli
