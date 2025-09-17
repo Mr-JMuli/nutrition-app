@@ -1,110 +1,131 @@
-Affordable Nutrition Planner for Kenya 🇰🇪| [https://nutri-app.streamlit.app/]
-An AI-powered web application designed to deliver affordable meal recommendations for Kenyan households, aligning with SDG 2: Zero Hunger. Developed as a bootcamp final project, this tool uses linear programming to optimize daily nutrition by prioritizing user-owned foods, staying within budget constraints, and incorporating Kenyan staples.
+# 🇰🇪 Affordable Nutrition Planner for Kenya
 
-✨ Features
+[Live App](https://nutri-app.streamlit.app/)  
 
-Custom Food Input: Users can input owned foodstuffs (e.g., "Maize Flour, 1 kg") and costs for purchasing additional quantities.
-Dynamic Price Updates: Scrapes real-time prices from Naivas.online, with fallback to default prices if scraping fails.
-Custom Food Nutrients: Retrieves nutritional data for new foods via the USDA FoodData Central API.
-Dietary Preferences: Supports vegetarian diets and food exclusions (e.g., peanuts for allergies or fish for cultural preferences).
-Visualization: Displays a bar chart of nutrient contributions (calories, protein, iron, vitamins A/C).
-Kenyan Recipes: Suggests culturally relevant dishes like ugali na sukuma wiki based on recommendations.
-Public Hosting: Deployed on Streamlit Community Cloud for free, accessible worldwide.
+An **AI-powered web application** designed to deliver affordable meal recommendations for Kenyan households, aligned with **SDG 2: Zero Hunger**.  
+This project was developed as a **bootcamp final project** and uses **linear programming** to optimize daily nutrition—prioritizing user-owned foods, staying within budget, and incorporating Kenyan staples.
 
+---
 
-🛠️ Setup Instructions
-Prerequisites
+## ✨ Features
 
-Python 3.10+ (python.org)
-Git (git-scm.com)
-VS Code (code.visualstudio.com) with Python extension
+- **Custom Food Input**: Add owned foodstuffs (e.g., *Maize Flour, 1 kg*) and set costs for extra quantities.  
+- **Dynamic Price Updates**: Scrapes real-time prices from **Naivas.online** (fallback to default prices if scraping fails).  
+- **Custom Food Nutrients**: Retrieves nutrient data for new foods via the **USDA FoodData Central API**.  
+- **Dietary Preferences**: Supports vegetarian diets and food exclusions (e.g., peanuts for allergies, fish for cultural reasons).  
+- **Visualization**: Interactive nutrient bar chart (calories, protein, iron, vitamins A/C).  
+- **Kenyan Recipes**: Suggests familiar dishes like *ugali na sukuma wiki* based on recommendations.  
+- **Public Hosting**: Deployed on **Streamlit Community Cloud**, free and accessible worldwide.  
 
-Local Setup
+---
 
-Clone the Repository:git clone https://github.com/yourusername/nutrition-app.git
+## 🛠️ Setup Instructions
+
+### Prerequisites
+- [Python 3.10+](https://www.python.org)  
+- [Git](https://git-scm.com)  
+- [VS Code](https://code.visualstudio.com) with Python extension  
+
+### Local Setup
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/nutrition-app.git
 cd nutrition-app
 
+# Create a virtual environment
+python -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 
-Create a Virtual Environment:python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+# Install dependencies
+pip install -r requirements.txt
 
-
-Install Dependencies:pip install -r requirements.txt
-
-
-Run the App:streamlit run app.py
-
-Access at http://localhost:8501.
-
+# Run the app
+streamlit run app.py
+Access locally at: http://localhost:8501
 
 🚀 Deployment
-Deploy the app publicly for free using Streamlit Community Cloud:
+You can deploy for free on Streamlit Community Cloud:
 
-Push to GitHub:
-Ensure requirements.txt and app.py are in your repo.
-Run:git add .
+Push to GitHub
+
+bash
+Copy code
+git add .
 git commit -m "Deploy nutrition app"
 git push origin main
+Go to share.streamlit.io
 
+Connect your GitHub repo
 
+Select main branch
 
+Set app.py as the entry file
 
-Deploy on Streamlit Cloud:
-Visit share.streamlit.io.
-Connect your GitHub repo, select main branch, set app.py as the main file.
-Click "Deploy!" to get a public URL (e.g., https://nutrition-app.streamlit.app).
+Click Deploy!
 
-
-Manage: Monitor logs or reboot via the Streamlit dashboard if needed.
-
+Your app will be live at a URL like:
+👉 https://nutrition-app.streamlit.app
 
 📖 Usage
+Set Budget – Choose a daily budget (e.g., KES 300).
 
-Set Budget: Choose a daily budget (e.g., KES 300) using the slider.
-Add Owned Foods: Input foods you have (e.g., "Maize Flour", 1 kg, cost KES 110 for more).
-Set Preferences: Select vegetarian or exclude foods (e.g., peanuts for allergies).
-Get Recommendations: Click "Get Recommendations" to view diet plan, nutrient chart, and recipes.
-Update Prices: Click "Fetch Latest Prices" to scrape from Naivas (optional).
+Add Owned Foods – Input items you already have (e.g., Maize Flour, 1kg @ KES 110).
 
+Set Preferences – Choose vegetarian or exclude foods (e.g., peanuts, fish).
+
+Get Recommendations – View optimized diet plan, nutrient chart, and suggested recipes.
+
+Update Prices – Fetch the latest Naivas prices (optional).
 
 🧑‍💻 Tech Stack
+Python – Core programming
 
-Python: Core programming language.
-PuLP: Linear programming for diet optimization.
-Streamlit: Interactive web interface.
-Pandas: Data processing and visualization.
-Requests/BeautifulSoup: Web scraping for prices.
-USDA FoodData Central API: Nutrient data for custom foods.
+PuLP – Linear programming for optimization
 
+Streamlit – Web interface
+
+Pandas – Data handling & visualization
+
+Requests + BeautifulSoup – Price scraping
+
+USDA API – Nutrient data
 
 📊 Data Sources
+Foods: Kenyan staples (maize flour, sukuma wiki, beans)
 
-Foods: Kenyan staples (e.g., maize flour, sukuma wiki, beans).
-Costs: Estimated 2025 prices (e.g., maize flour ~KES 110/kg) from Naivas.online, KNBS, and market trends.
-Nutrients: Calories, protein, iron, vitamins A/C, sourced from USDA/FAO data.
-Note: Update costs/nutrients with local market data or APIs for higher accuracy.
+Costs: 2025 estimates from Naivas, KNBS, and market trends (maize flour ~KES 110/kg)
 
+Nutrients: USDA / FAO data (Calories, Protein, Iron, Vitamins A & C)
+
+ℹ️ For more accuracy, update with local market data or APIs.
 
 ⚠️ Limitations
+Web scraping may fail if Naivas.online changes its structure.
 
-Web scraping may fail if Naivas.online changes structure (defaults used as fallback).
-USDA API uses a demo key (limited requests; obtain a free key for production at fdc.nal.usda.gov).
-Simplified nutrient set; expand with local Kenyan food composition data for precision.
+USDA API uses a demo key (limited requests); obtain a free key here.
 
+Currently tracks a simplified nutrient set – expand with Kenyan food composition data for precision.
 
 🌱 Future Enhancements
+Add more Kenyan recipes (githeri, ndengu curry).
 
-Add more Kenyan recipes (e.g., ndengu curry, githeri).
-Optimize for mobile devices to reach rural users.
-Include carbon footprint metrics for sustainable food choices.
-Integrate additional APIs (e.g., Numbeo for prices).
+Optimize UI for mobile access in rural areas.
 
+Track carbon footprint for sustainable eating.
+
+Integrate additional APIs (e.g., Numbeo for pricing).
 
 🌍 SDG 2 Impact
-This app empowers low-income Kenyan households to maximize nutrition using owned foods, reducing waste and costs. By recommending affordable, nutrient-rich meals tailored to local diets, it addresses malnutrition and supports Zero Hunger.
+This app empowers low-income Kenyan households to:
+✅ Maximize nutrition from foods they already own
+✅ Minimize waste and costs
+✅ Access affordable, culturally relevant meal plans
+
+By promoting nutrient-rich, affordable diets, the tool directly supports SDG 2: Zero Hunger.
 
 👤 Author
-[John Muli]PLP Python Programming Final Project, September 2025
+John Muli
+PLP Python Programming Final Project – September 2025
 
 📜 License
-MIT License. Free to use, modify, and share.
+MIT License – Free to use, modify, and share.
