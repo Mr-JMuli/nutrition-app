@@ -56,10 +56,9 @@ git add .
 git commit -m "Deploy nutrition app"
 git push origin main
 ```
-## Go to share.streamlit.io
+Go to [share.streamlit.io]
 
 ---
-
 ## Connect your GitHub repo
 
 Select main branch
