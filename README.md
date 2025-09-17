@@ -126,7 +126,6 @@ Track carbon footprint for sustainable eating.
 Integrate additional APIs (e.g., Numbeo for pricing).
 
 ---
-
 ## 🌍 SDG 2 Impact
 This app empowers low-income Kenyan households to:
 ### ✅ Maximize nutrition from foods they already own
