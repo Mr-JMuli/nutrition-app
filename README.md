@@ -45,19 +45,20 @@ Access locally at: http://localhost:8501
 ```
 
 
-🚀 Deployment
+### 🚀 Deployment
 You can deploy for free on Streamlit Community Cloud:
 
-Push to GitHub
-
+#Push to GitHub
+```
 bash
 Copy code
 git add .
 git commit -m "Deploy nutrition app"
 git push origin main
-Go to share.streamlit.io
+```
+## Go to share.streamlit.io
 
-Connect your GitHub repo
+# Connect your GitHub repo
 
 Select main branch
 
@@ -65,10 +66,10 @@ Set app.py as the entry file
 
 Click Deploy!
 
-Your app will be live at a URL like:
+## Your app will be live at a URL like:
 👉 https://nutrition-app.streamlit.app
 
-📖 Usage
+## 📖 Usage
 Set Budget – Choose a daily budget (e.g., KES 300).
 
 Add Owned Foods – Input items you already have (e.g., Maize Flour, 1kg @ KES 110).
@@ -79,7 +80,7 @@ Get Recommendations – View optimized diet plan, nutrient chart, and suggested 
 
 Update Prices – Fetch the latest Naivas prices (optional).
 
-🧑‍💻 Tech Stack
+## 🧑‍💻 Tech Stack
 Python – Core programming
 
 PuLP – Linear programming for optimization
@@ -92,23 +93,23 @@ Requests + BeautifulSoup – Price scraping
 
 USDA API – Nutrient data
 
-📊 Data Sources
+## 📊 Data Sources
 Foods: Kenyan staples (maize flour, sukuma wiki, beans)
 
 Costs: 2025 estimates from Naivas, KNBS, and market trends (maize flour ~KES 110/kg)
 
 Nutrients: USDA / FAO data (Calories, Protein, Iron, Vitamins A & C)
 
-ℹ️ For more accuracy, update with local market data or APIs.
+# ℹ️ For more accuracy, update with local market data or APIs.
 
-⚠️ Limitations
+## ⚠️ Limitations
 Web scraping may fail if Naivas.online changes its structure.
 
 USDA API uses a demo key (limited requests); obtain a free key here.
 
 Currently tracks a simplified nutrient set – expand with Kenyan food composition data for precision.
 
-🌱 Future Enhancements
+## 🌱 Future Enhancements
 Add more Kenyan recipes (githeri, ndengu curry).
 
 Optimize UI for mobile access in rural areas.
@@ -117,17 +118,17 @@ Track carbon footprint for sustainable eating.
 
 Integrate additional APIs (e.g., Numbeo for pricing).
 
-🌍 SDG 2 Impact
+## 🌍 SDG 2 Impact
 This app empowers low-income Kenyan households to:
-✅ Maximize nutrition from foods they already own
-✅ Minimize waste and costs
-✅ Access affordable, culturally relevant meal plans
+# ✅ Maximize nutrition from foods they already own
+# ✅ Minimize waste and costs
+# ✅ Access affordable, culturally relevant meal plans
 
 By promoting nutrient-rich, affordable diets, the tool directly supports SDG 2: Zero Hunger.
 
-👤 Author
-John Muli
-PLP Python Programming Final Project – September 2025
+### 👤 Author
+## John Muli
+# PLP Python Programming Final Project – September 2025
 
-📜 License
+## 📜 License
 MIT License – Free to use, modify, and share.
