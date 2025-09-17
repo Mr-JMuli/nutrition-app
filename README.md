@@ -3,7 +3,6 @@
 
 # Affordable Nutrition Planner for Kenya
 
----
 
 ### [Live App](https://nutri-app.streamlit.app/)  
 
