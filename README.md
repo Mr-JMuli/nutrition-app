@@ -3,7 +3,7 @@
 [Live App](https://nutri-app.streamlit.app/)  
 
 An **AI-powered web application** designed to deliver affordable meal recommendations for Kenyan households, aligned with **SDG 2: Zero Hunger**.  
-This project was developed as a **bootcamp final project** and uses **linear programming** to optimize daily nutrition—prioritizing user-owned foods, staying within budget, and incorporating Kenyan staples.
+This project was developed as a **PLP Academy Python Programming final project** and uses **linear programming** to optimize daily nutrition—prioritizing user-owned foods, staying within budget, and incorporating Kenyan staples.
 
 ---
 
